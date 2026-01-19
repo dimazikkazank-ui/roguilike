@@ -1,0 +1,28 @@
+{
+  "name": "rogue1980",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git-ssh.21-school.ru:2222/students_repo/lorezaar/AP1_JS_P01.ID_1375349-Team_TL_lorezaar.3acf5cde_d75f_4f4e-1.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "rebuild": "rm -rf dist && npm run build",
+    "build": "babel src --out-dir dist && mkdir -p dist/data",
+    "start": "node dist/index.js",
+    "test": "node src/test.js"
+  },
+  "dependencies": {
+    "ink": "^6.5.1",
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "source-map-support": "^0.5.21"
+  }
+}
